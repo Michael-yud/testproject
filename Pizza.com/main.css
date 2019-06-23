@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-wrapper {
+    display: flex;
+}
+
+.caption {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.3s;
+    background: rgba(153, 153, 153, 0.4);
+    margin-right: .5em;
+}
+
+.change-button:hover { background: salmon; }
+.create-button:hover { background: pink; }
+
+.pizzas-block {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pizzas-block_modify {
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizza-block {
+    width: 265px;
+    height: 420px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: box-shadow .2s;
+    position: relative;
+}
+
+.pizza-block:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.pizza-block_modify {
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+}
+
+.pizza-img {
+    display: block;
+    width: 265px;
+    height: 200px; 
+}
+
+.pizza-img_hidden {
+    display: none;
+}
+
+.description-list {
+    list-style: none;
+    padding: 0;
+    padding-left: 0.5em; 
+}
+
+.description-list_modify {
+    display: flex;
+    padding: 0;
+}
+
+.description-list_modify::before {
+    content: '';
+    background-image: url(img/icon.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.description-list_modify__item {
+    padding: 0.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description-list_modify__item:nth-child(2) {
+    display: none;
+}
+
+.select {
+    padding: 0.5em;
+    background: rgba(153, 153, 153, 0.4);
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 1em 1em 1em;
+}
+
+.label {
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+.extra-label {
+    padding-left: 0.5em;
+    width: 120px;
+}
+
+.checkboxCheese_modify {
+    display: none;
+}
+
+.label_modify {
+    display: none;
+}
+
+.buy-button {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+    color: white;
+    cursor: pointer;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: .3s;
+    background: rgba(153, 153, 153, 0.4);
+}
+
+.buy-button:hover {
+    background: orange;
+}
+
+.buy-button:active {
+    background: rgba(153, 153, 153, 0.4);
+}
+
+.fa-shopping-cart {
+    font-size: 2em;
+    color: orange;
+}
+
+.basket {
+    margin-left: 0.5em;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.items-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: orange;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.create-button:active {
+    background: rgba(153, 153, 153, 0.4);
+}
+
+.new-pizza-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 213, 235, 0.2);
+}
+
+.input {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.new-pizza-ingridients {
+    display: flex;
+}
+
+.new-pizza-param {
+    margin: 0;
+}
+
+.new-pizza-ingridients {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}

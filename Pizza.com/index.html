@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="main.js" defer></script>
+
+
+</head>
+
+<body>
+    <h1 class="caption" id="main-caption">Pizza</h1>
+    <div class="header-wrapper">
+        <label for="sort" class="label">Sort by</label>
+        <select name="Sort" id="sort" class="select">
+            <option value="none">none</option>
+            <option value="price">price</option>
+            <option value="ccal">ccal</option>
+        </select>
+        <input type="checkbox" id="cheese">
+        <label for="cheese" class="label" id="label-cheese">With cheese</label>
+        <div class="basket">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="items-num" id="items-num"></p>
+        </div>
+    </div>
+    <div id="pizzas-wrapper"></div>
+        <form action="#" class="new-pizza-block">
+                <h2 class="caption">Create Your Own Pizza</h2>
+                <label for="new-pizza-name" class="label">Pizza's name</label>
+                <input type="text" id="new-pizza-name" class="input">
+                <div class="new-pizza-ingridients" id="new-pizza-ingridients">
+                    <p class="label">Choose ingridients</p>
+                    <ul class="new-pizza-ingridients-list" id="new-pizza-ingridients-list"></ul>
+                </div>
+                <p class="label">Ccal</p>
+                <p id="new-pizza-ccal" class="new-pizza-param">0</p>
+                <p class="label">Price</p>
+                <p id="new-pizza-price" class="new-pizza-param">0</p>
+                <input type="submit" class="button create-button" id="create-button" value="Add To List">
+        </form>
+  
+
+</body>
+
+</html>
